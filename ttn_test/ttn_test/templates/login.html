@@ -1,0 +1,20 @@
+{% if session['logged_in'] %}
+<p>You're logged in already!</p>
+{% else %}
+<form action="/login" method="POST">
+  <input type="username" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Log in">
+  <a href='/register_menu'>Register</a>
+  <a href="/manager_login">Manager Login</a>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    <!--{% for message in messages %}-->
+      <p>{{ message }}</p>
+    <!--{% endfor %}-->
+    </ul>
+  {% endif %}
+{% endwith %}
+</form>
+{% endif %}

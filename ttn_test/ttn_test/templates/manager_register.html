@@ -1,0 +1,31 @@
+
+<form action="/manager_regist" method="POST">
+  <div>
+  <input type="name" name="name" placeholder="Full Name">
+</div>
+
+<div>
+	<input type="username" name="username" placeholder="Username">
+</div>
+
+<div>
+
+	<input type="password" name="password" placeholder="Password">
+</div>
+
+
+  <div>
+  <input type="age" name="age" placeholder="Age">
+
+</div>
+	<input type="submit" value="Register">
+	{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    <!--{% for message in messages %}-->
+      <p>{{ message }}</p>
+    <!--{% endfor %}-->
+    </ul>
+  {% endif %}
+{% endwith %}
+</form>

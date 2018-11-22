@@ -1,0 +1,59 @@
+<!--
+<form action="/customer", method="POST">
+<input type="username" name="username" placeholder="Username">
+<input type="message" name="message" placeholder="Message">
+<input type="submit" value="Submit"> 
+</form>
+<a href='/logout'>Logout</a>-->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<p>HELLO</p>  
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #aaaaaa;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #cccccc;
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+<table>
+  <tr>
+    <th>username</th>
+    <th>data</th>
+  </tr>
+   {% for dat in temp %}
+  <tr>
+    <td>{{dat.username}}</td>
+    <td>{{dat.data}}</td>
+  </tr>
+  {% endfor %}
+
+  
+</table>
+  <a href='/logout'>Logout</a>
+</body>
+</html>
+
+
+
+
+
