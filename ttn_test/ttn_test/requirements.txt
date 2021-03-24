@@ -38,7 +38,7 @@ pymongo==2.9
 python-daemon==2.1.2
 python-jose==3.0.0
 requests==2.2.1
-rsa==3.4.2
+rsa==4.1
 service==0.5.1
 setproctitle==1.1.10
 six==1.11.0
