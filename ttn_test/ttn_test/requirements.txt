@@ -37,7 +37,7 @@ pyasn1-modules==0.2.2
 pymongo==2.9
 python-daemon==2.1.2
 python-jose==3.0.0
-requests==2.2.1
+requests==2.20.0
 rsa==3.4.2
 service==0.5.1
 setproctitle==1.1.10
